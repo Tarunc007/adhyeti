@@ -8,8 +8,7 @@ group :development, :test do
   gem 'mysql2', '~> 0.3.17'
 end
 group :production do
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'pg' 
 end
 
 group :assets do
@@ -18,6 +17,7 @@ group :assets do
 #gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 end	
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 5.0'
