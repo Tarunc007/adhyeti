@@ -12,8 +12,9 @@ group :production do
 end
 
 group :assets do
-#gem 'therubyracer'
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+#gem 'libv8', '~> 3.11.8.3'
+ #gem 'therubyracer', :platform => :ruby
+#gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 end	
 
