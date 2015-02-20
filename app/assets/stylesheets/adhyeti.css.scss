@@ -1,0 +1,419 @@
+//colors
+$color_gigas_approx: #553592;
+$white_30: rgba(255,255,255,.3);
+$white: #fff;
+$amethyst: #96c;
+$color_eastern_blue_approx: #219ab3;
+$color_deep_sea_green_approx: #11505d;
+$amazon: #3b7a57;
+$black: #000;
+$white_10: rgba(255,255,255,.1);
+$color_jordy_blue_approx: #7cb9e8;
+$amber: #ffbf00;
+$color_atlantis_approx: #a4c639;
+$color_purple_heart_approx: #8a2be2;
+$color_amaranth_approx: #ea3c53;
+$eminence: #6c3082;
+$color_alabaster_approx: #fcfcfc;
+$white_20: rgba(255,255,255,.2);
+$color_night_shadz_approx: #ab274f;
+$laser_lemon: #ff6;
+$color_mountain_meadow_approx: #1abc9c;
+$color_zest_approx: #e67e22;
+$color_curious_blue_approx: #3498db;
+$color_emerald_approx: #2ecc71;
+
+//fonts
+$font_0: Tangerine;
+$font_1: cursive;
+$font_2: Cantarell;
+$font_3: sans-serif;
+
+//urls
+$url_0: url("http://fonts.googleapis.com/css?family=Tangerine:400,700");
+/*$url_1: url("http://fonts.googleapis.com/css?family=Cantarell:400,400italic");*/
+$url_2: url("/assets/intro-bg.jpg");
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+%extend_1 {
+    margin: 0 0 35px;
+    font-family: $font_2, $font_3;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+//original selectors
+//.btn-circle:hover, .btn-circle:focus
+%extend_2 {
+    color: $white;
+    outline: 0;
+    background: $white_10;
+}
+
+//original selectors
+//.btn-default:hover, .btn-default:focus
+%extend_3 {
+    color: $black;
+    border: 1px solid $eminence;
+    outline: 0;
+    background-color: $eminence;
+}
+
+
+/*@import $url_1;*/
+body {
+    width: 100%;
+    height: 100%;
+    font-family: $font_0, $font_1;
+    color: $white;
+    background-color: $amethyst;
+    webkit-tap-highlight-color: $white_20;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    @extend %extend_1;
+}
+h2 {
+    @extend %extend_1;
+}
+h3 {
+    @extend %extend_1;
+}
+h4 {
+    @extend %extend_1;
+}
+h5 {
+    @extend %extend_1;
+}
+h6 {
+    @extend %extend_1;
+}
+p {
+    margin: 0 0 25px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+@media(min-width:767px) {
+    
+    .content-section {
+        padding-top: 250px;
+    }
+    .download-section {
+        padding: 100px 0;
+    }
+}
+a {
+    //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .2s ease-in-out;
+    color: $color_eastern_blue_approx;
+    &:hover {
+        text-decoration: none;
+        color: $color_deep_sea_green_approx;
+    }
+    &:focus {
+        text-decoration: none;
+        color: $color_deep_sea_green_approx;
+    }
+}
+.light {
+    font-weight: 400;
+}
+.navbar-custom {
+    margin-bottom: 0;
+    font-family: $font_2, $font_3;
+    text-transform: uppercase;
+    border-bottom: 1px solid $white_30;
+    background-color: rgb(48, 69, 120);
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: 0;
+        }
+        .navbar-toggle {
+            padding: 4px 6px;
+            font-size: 40px;
+            color: $white;
+            &:focus {
+                outline: 0;
+            }
+            &:active {
+                outline: 0;
+            }
+        }
+    }
+    a {
+        color: $white;
+    }
+    .nav li {
+        &.active {
+            outline: nonte;
+            background-color: $white_30;
+        }
+        a {
+            //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: background .3s ease-in-out;
+            &:hover {
+                outline: 0;
+                background-color: $white_30;
+            }
+            &:focus {
+                outline: 0;
+                background-color: $white_30;
+            }
+            &.active {
+                outline: 0;
+                background-color: $white_30;
+            }
+        }
+    }
+}
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $white;
+    background: $url_2 no-repeat bottom center scroll;
+    background-color: $black;
+    background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+        }
+    }
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 7px 16px;
+    margin-top: 15px;
+    font-size: 40px;
+    //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: background .3s ease-in-out;
+    color: $white;
+    border: 2px solid $white;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 35px;
+    background: 0 0;
+    &:hover {
+        @extend %extend_2;
+        i.animated {
+        }
+    }
+    &:focus {
+        @extend %extend_2;
+    }
+    i.animated {
+    }
+}
+@-webkit-keyframes pulse {
+    1% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1);
+    }
+    50% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1.2);
+    }
+    100% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1);
+    }
+}
+@-moz-keyframes pulse {
+    1% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1);
+    }
+    50% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1.2);
+    }
+    100% {
+        //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: scale(1);
+    }
+}
+.content-section {
+    padding-top: 100px;
+    &#services {
+        margin-top: 0;
+        font-size: 10px;
+    }
+}
+.getstarted {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    color: $white;
+    background: $color_jordy_blue_approx;
+    background-color: $color_jordy_blue_approx;
+    background-size: cover;
+}
+.about {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    color: $white;
+    background: $amber;
+    background-color: $amber;
+    background-size: cover;
+}
+.contact {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    color: $white;
+    background: $color_atlantis_approx;
+    background-color: $color_atlantis_approx;
+    background-size: cover;
+}
+.work {
+    height: 800px;
+    padding: 0;
+    color: $white;
+    background: $color_purple_heart_approx;
+    background-color: $color_purple_heart_approx;
+    background-size: cover;
+    idth: 100%;
+}
+.login {
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    color: $white;
+    background: $color_amaranth_approx;
+    background-color: $color_amaranth_approx;
+    background-size: cover;
+}
+.searchbar {
+    max-width: 600px;
+}
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+.logo {
+    font-size: 20px;
+    font-color: $color_amaranth_approx;
+}
+.btn {
+    font-family: $font_2, $font_3;
+    font-weight: 500;
+    //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    font-color: $eminence;
+}
+.btn-default {
+    color: $eminence;
+    border: 2px solid $eminence;
+    background-color: transparent;
+    &:hover {
+        @extend %extend_3;
+    }
+    &:focus {
+        @extend %extend_3;
+    }
+}
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+footer {
+    padding: 50px 0;
+    background-color: $color_night_shadz_approx;
+    p {
+        margin: 0;
+    }
+}
+
+.service-item {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $white;
+    a {
+        color: $laser_lemon;
+        &:hover {
+            color: $black;
+        }
+    }
+    .service-icon {
+        padding: 110px 0;
+        font-size: 3em;
+    }
+    .service-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: all 200ms ease-in-out;
+        opacity: 0;
+        .inner-service {
+            padding: 20px;
+        }
+        h3 {
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+    &:hover {
+        .service-icon {
+            visibility: hidden;
+            opacity: 0;
+        }
+        .service-content {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+#service-1 {
+    background-color: $color_mountain_meadow_approx;
+}
+#service-2 {
+    background-color: $color_zest_approx;
+}
+#service-3 {
+    background-color: $color_curious_blue_approx;
+}
+#service-4 {
+    background-color: $color_emerald_approx;
+}
+ul.banner-social-buttons {
+    margin-top: 0;
+}

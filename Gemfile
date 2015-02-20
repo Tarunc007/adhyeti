@@ -5,22 +5,21 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use mysql as the database for Active Record
 group :development, :test do
-  gem 'mysql2', '~> 0.3.17'
+gem 'mysql2', '~> 0.3.17'
 end
 group :production do
-  gem 'pg' 
+gem 'pg' 
 end
 
-group :assets do
-#gem 'libv8', '~> 3.11.8.3'
- #gem 'therubyracer', :platform => :ruby
-#gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
-end	
+
+gem 'bootstrap-sass', '~> 3.3.3'
+gem 'sass-rails', '~> 5.0'
+gem 'autoprefixer-rails'	
+gem "font-awesome-rails"
 gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
-#gem 'sass-rails', '~> 5.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -47,11 +46,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+gem 'byebug'
 
-  # Access an IRB console on exception pages or by using <%= console %> in views
- # gem 'web-console'
+# Access an IRB console on exception pages or by using <%= console %> in views
+# gem 'web-console'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

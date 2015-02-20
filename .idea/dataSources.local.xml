@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Adhyeti: development" uuid="642f8263-b1d4-4788-9e01-75374a99b033">
+      <user-name>root</user-name>
+      <user-password>df9fdf99dfcedfd8dfcbdfcddfc5dfc4df9cdf9ddfea</user-password>
+      <schema-pattern>adhyeti_development.*</schema-pattern>
+      <default-schemas>adhyeti_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails Adhyeti: test" uuid="e5c94c5a-7da5-4d61-9c8e-6e898bb27b5e">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>df9fdf99dfcedfd8dfcbdfcddfc5dfc4df9cdf9ddfea</user-password>
+    </data-source>
+    <data-source name="Rails Adhyeti: production" uuid="8098f14b-83f8-42d4-8540-52179b994b49">
+      <first-sync>true</first-sync>
+      <user-name>Adhyeti</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfebdfeedfe2dff3dfefdffedfe3dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
