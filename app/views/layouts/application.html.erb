@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Adhyeti:- The new way for education.</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<title>Adhyeti:- The new way for education.</title>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 </head>
- <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <%= render('partials/header')%>
-   
-<%= yield %>
 
+<%if notice %><header class="intro">
+<div class="intro-body">
+<div class="alert alert-info"><%=notice%></div>
+<%end %>
+<%if alert %><div class="alert alert-info"><%=alert%></div><%end %>  
+
+<%= yield %>
 <%= render('partials/footer')%>
- 
+
 </body>
 </html>

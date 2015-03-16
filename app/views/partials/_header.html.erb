@@ -32,6 +32,29 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <% if user_signed_in? %>
+                    <li>
+                        <%= link_to "LogOut",destroy_user_session_path,method: :delete, :class => "page-scroll" %>
+                    </li>
+                    <li>
+                        <% if(current_user.user_type == "Faculty") %>
+                        
+                        <%= link_to "Profile","faculty",:class => "page-scroll" %>
+                        <%else%>
+                        <%= link_to "Profile","student",:class => "page-scroll" %>
+                        <%end%>
+                    </li>
+                    <%else%>
+                    <li>
+                    <%= link_to "LogIn",new_user_session_path, :class => "page-scroll" %>
+                    </li>
+                    <%end %>
+
+                    <li>
+                    <% if user_signed_in? %>
+                    <a href="#" class="page-scroll"><%= current_user.name %></a>
+                    <% end %>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

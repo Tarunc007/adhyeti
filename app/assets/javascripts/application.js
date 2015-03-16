@@ -16,4 +16,7 @@
 //= require turbolinks
 //= require adhyeti
 //= require jquery.easing.min
+// Loads all Semantic javascripts
+//= require semantic-ui
+//= require main
 

@@ -1,36 +1,39 @@
 <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">ADHYETI</h1>
-                        <p class="intro-text"><h3>The new way to education.</h3></p>
-                        <a href="#getstarted" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
+<%if notice %>
+<% else%>
+<header class="intro">
+    <div class="intro-body">
+        <%end%>
+        <div class="container contentheader">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">ADHYETI</h1>
+                    <p class="intro-text"><h3>The new way to education.</h3></p>
+                    <a href="#getstarted" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Get Started Section -->
-    <section id="getstarted" class=" getstarted text-center">
-        <div class="container content-section">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Get Started Your Search</h2>
-                <div class="col-lg-12">
-                    <div class="input-group">
-                      <input type="text" class="searchbar form-control" >
-                      <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Search</button>
-                    </span>
-                </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
+<!-- Get Started Section -->
+<section id="getstarted" class=" getstarted text-center">
+    <div class="container content-section">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Get Started Your Search</h2>
+            <div class="col-lg-12">
+                <div class="searchinput input-group">
+    <input type="text" class="searchbar form-control" style="width:700px; height:40px; " >
+                  <span class="input-group-btn">
+                      <button class="ui purple button" type="button">Search</button>
+                  </span>
+              </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
 
-    </div>       
+  </div>       
 </div>
 </section>
 <!-- About Section -->
@@ -45,67 +48,67 @@
 <!-- Our Work Section -->
 <section id="work" class="work  text-center">
     <div class="container content-section">
-                <div class="row">
-                    <div class="heading-section col-md-12 text-center">
-                        <h2>Our Work</h2>
-                        <h3>Let us help you to find ur need.</h3>
-                    </div> <!-- /.heading-section -->
-                </div> <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item" id="service-1">
-                            <div class="service-icon">
-                                <i class="fa fa-file-code-o"></i>
-                            </div> <!-- /.service-icon -->
-                            <div class="service-content">
-                                <div class="inner-service">
-                                   <h3>Responsive</h3>
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
-                                </div>
-                            </div> <!-- /.service-content -->
-                        </div> <!-- /#service-1 -->
-                    </div> <!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item" id="service-2">
-                            <div class="service-icon">
-                                <i class="fa fa-paper-plane-o"></i>
-                            </div> <!-- /.service-icon -->
-                            <div class="service-content">
-                                <div class="inner-service">
-                                   <h3>HTML5 CSS3</h3>
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
-                                </div>
-                            </div> <!-- /.service-content -->
-                        </div> <!-- /#service-1 -->
-                    </div> <!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item" id="service-3">
-                            <div class="service-icon">
-                                <i class="fa fa-institution"></i>
-                            </div> <!-- /.service-icon -->
-                            <div class="service-content">
-                                <div class="inner-service">
-                                   <h3>Web Design</h3>
-                                   <p>We create <a href="#">mobile website templates</a> that are responsive for any screen size on any device. Feel free to download and use our templates without restrictions.</p> 
-                                </div>
-                            </div> <!-- /.service-content -->
-                        </div> <!-- /#service-1 -->
-                    </div> <!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="service-item" id="service-4">
-                            <div class="service-icon">
-                                <i class="fa fa-flask"></i>
-                            </div> <!-- /.service-icon -->
-                            <div class="service-content">
-                                <div class="inner-service">
-                                   <h3>Mobile Ready</h3>
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
-                                </div>
-                            </div> <!-- /.service-content -->
-                        </div> <!-- /#service-1 -->
-                    </div> <!-- /.col-md-3 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
+        <div class="row">
+            <div class="heading-section col-md-12 text-center">
+                <h2>Our Work</h2>
+                <h3>Let us help you to find ur need.</h3>
+            </div> <!-- /.heading-section -->
+        </div> <!-- /.row -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item" id="service-1">
+                    <div class="service-icon">
+                        <i class="fa fa-file-code-o"></i>
+                    </div> <!-- /.service-icon -->
+                    <div class="service-content">
+                        <div class="inner-service">
+                         <h3>Responsive</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
+                     </div>
+                 </div> <!-- /.service-content -->
+             </div> <!-- /#service-1 -->
+         </div> <!-- /.col-md-3 -->
+         <div class="col-md-3 col-sm-6">
+            <div class="service-item" id="service-2">
+                <div class="service-icon">
+                    <i class="fa fa-paper-plane-o"></i>
+                </div> <!-- /.service-icon -->
+                <div class="service-content">
+                    <div class="inner-service">
+                     <h3>HTML5 CSS3</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
+                 </div>
+             </div> <!-- /.service-content -->
+         </div> <!-- /#service-1 -->
+     </div> <!-- /.col-md-3 -->
+     <div class="col-md-3 col-sm-6">
+        <div class="service-item" id="service-3">
+            <div class="service-icon">
+                <i class="fa fa-institution"></i>
+            </div> <!-- /.service-icon -->
+            <div class="service-content">
+                <div class="inner-service">
+                 <h3>Web Design</h3>
+                 <p>We create <a href="#">mobile website templates</a> that are responsive for any screen size on any device. Feel free to download and use our templates without restrictions.</p> 
+             </div>
+         </div> <!-- /.service-content -->
+     </div> <!-- /#service-1 -->
+ </div> <!-- /.col-md-3 -->
+ <div class="col-md-3 col-sm-6">
+    <div class="service-item" id="service-4">
+        <div class="service-icon">
+            <i class="fa fa-flask"></i>
+        </div> <!-- /.service-icon -->
+        <div class="service-content">
+            <div class="inner-service">
+             <h3>Mobile Ready</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.</p> 
+         </div>
+     </div> <!-- /.service-content -->
+ </div> <!-- /#service-1 -->
+</div> <!-- /.col-md-3 -->
+</div> <!-- /.row -->
+</div> <!-- /.container -->
 </section>
 
 <!-- Login Section -->
@@ -117,15 +120,17 @@
 
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="form.html" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">Join as Student</span></a>
-                    </li>
-                    <li>
-                        <a href="form.html" class="btn btn-default btn-lg"><i class="fa fa-user fa-fw"></i> <span class="network-name">Join as Teacher</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                      <span class="btn btn-default btn-lg"><i class="fa fa-user fa-fw"></i><%= link_to "Join as Student",new_user_registration_path,:class => "network-name" %></span>
+                  </li>
+                  <li>
+
+                      <span class="btn btn-default btn-lg"><i class="fa fa-user fa-fw"></i><%= link_to "Join as Teacher",new_user_registration_path,:class => "network-name" %></span>
+
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
 </section>
 
 <!-- Contact Section -->

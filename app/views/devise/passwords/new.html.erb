@@ -1,0 +1,25 @@
+<div class="container joinsection">
+<div class="ui raised segment signup inactive">
+  <h3 class="ui inverted blue block header"> Forget Your Password  <a  style="float:right;"href="index.html">Back Home</a></h3>
+  <div class="ui blue stacked segment">
+    <!-- form here -->
+    <div class="ui form">
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+     <div class="ui left labeled icon input"> 
+    <%= f.email_field :email, autofocus: true %>
+  <i class="user icon"></i>
+          </div>
+        </div>
+    <%= f.submit "Send me reset password instructions",:class => "ui red submit button" %>
+<% end %>
+<div class="ui divider"></div>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
+</div>
+

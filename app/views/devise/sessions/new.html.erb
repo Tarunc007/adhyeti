@@ -1,0 +1,60 @@
+<div class="container joinsection">
+<div class="ui raised segment signin">
+  <h3 class="ui inverted blue block header"> SIGN IN <a  style="float:right;"href="/home/index">Back Home</a> </h3>
+  <div class="ui two column grid basic segment">
+    <div class="column">
+      <div class="ui blue stacked segment">
+       <div class="ui form">
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name), role:"form") do |f| %>
+        <div class="field">
+          <%= f.label :email %><br />
+          <div class="ui left labeled icon input"> 
+            <%= f.email_field :email, autofocus: true,:class=>"form-control" %>
+            <i class="user icon"></i>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %><br />
+          <div class="ui left labeled icon input">
+            <%= f.password_field :password, autocomplete: "off",:class=>"form-control" %>
+            <i class="lock icon"></i>
+          </div>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+        <div class="inline field">
+          <div class="ui checkbox">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me,:class=>"checkbox" %>
+          </div>
+        </div>
+        <% end -%>
+
+        <%= f.submit "Log in", :class =>"ui red submit button" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical divider"> OR </div>
+  <div class="center aligned column">
+    <!-- Facebook button here -->
+    <h4 class="ui header"> Sign in with: </h4>
+    <div class="ui facebook button">
+      <i class="facebook icon"></i>
+      Facebook
+    </div>
+    <br/><br/><br/><br/>
+    <div class="ui twitter button">
+      <i class="twitter icon"></i>
+      Twitter
+    </div>
+  </div>
+</div>
+<div class="ui divider"></div>
+<%= render "devise/shared/links" %>
+</div>
+</div>
+
+
